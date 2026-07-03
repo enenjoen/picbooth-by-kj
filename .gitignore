@@ -1,0 +1,16 @@
+.DS_Store
+node_modules/
+*.log
+tmpfile*
+
+scripts/__pycache__/
+*.py[cod]
+
+data/photos/
+data/templates/
+data/thumb_.live-view.jpg
+
+iPadPicBooth/PicBooth.xcodeproj/xcuserdata/
+iPadPicBooth/PicBooth.xcodeproj/project.xcworkspace/xcuserdata/
+DerivedData/
+.swiftpm/

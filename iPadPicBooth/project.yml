@@ -1,0 +1,25 @@
+name: PicBooth
+options:
+  bundleIdPrefix: com.joenkv
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  PicBooth:
+    type: application
+    platform: iOS
+    sources:
+      - path: .
+        excludes:
+          - README.md
+          - project.yml
+    info:
+      path: Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.joenkv.picbooth
+        TARGETED_DEVICE_FAMILY: "2"
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_STYLE: Automatic
+    dependencies:
+      - sdk: ImageCaptureCore.framework

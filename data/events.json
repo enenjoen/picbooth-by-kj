@@ -1,0 +1,14 @@
+[
+  {
+    "id": "event",
+    "name": "Your Event",
+    "date": "",
+    "text": "一起记录这一刻",
+    "countdown": 3,
+    "captureSource": "camera",
+    "shotCount": 1,
+    "printer": "",
+    "template": "",
+    "activeTemplateId": "classic"
+  }
+]

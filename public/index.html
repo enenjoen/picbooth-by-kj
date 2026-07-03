@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#fdebf2">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/app-icon-192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css?v=25">
+  <title>PicBooth by KJ</title>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand-lockup">
+        <span class="brand-kicker">CELEBRATE · LAUGH · LOVE</span>
+        <div class="brand-line">
+          <h1 class="brand-title">Pic<span>Booth</span></h1>
+          <span class="brand-byline">by KJ</span>
+          <span class="brand-heart" aria-hidden="true">♡</span>
+          <p id="appTitle" class="event-title">Your Event</p>
+        </div>
+      </div>
+      <nav class="top-actions">
+        <button id="templatesButton" class="nav-button">模版设计</button>
+        <button id="fullscreenButton" class="icon-button" aria-label="全屏">⛶</button>
+        <button id="settingsButton" class="icon-button" aria-label="设置">⚙︎</button>
+      </nav>
+    </header>
+
+    <section id="boothView" class="view">
+      <div class="status-row">
+        <span id="cameraStatus" class="status">正在检查相机…</span>
+        <span id="eventLabel"></span>
+      </div>
+      <div class="booth-workspace">
+        <aside class="capture-template-picker">
+          <span class="picker-eyebrow">CHOOSE YOUR STYLE</span>
+          <h2>选择模版</h2>
+          <div class="selected-template-preview">
+            <div class="preview-label"><span>当前模版预览</span><small id="capturePreviewMeta"></small></div>
+            <div class="preview-canvas-wrap">
+              <canvas id="captureTemplatePreview" width="180" height="120" aria-label="当前模版预览"></canvas>
+            </div>
+          </div>
+          <div id="captureTemplateList" class="capture-template-list"></div>
+        </aside>
+        <div class="capture-column">
+          <div id="captureStage" class="stage landscape">
+            <span id="stageBadge" class="stage-badge">6 INCH · LANDSCAPE</span>
+            <span id="shotProgress" class="shot-progress hidden"></span>
+            <span class="stage-sparkle sparkle-one" aria-hidden="true">✦</span>
+            <span class="stage-sparkle sparkle-two" aria-hidden="true">✧</span>
+            <div id="emptyStage" class="empty-stage">
+              <span class="rings">♡</span>
+              <h2>留下这一刻</h2>
+              <p>轻触下方按钮，记录每一次精彩相聚</p>
+            </div>
+            <img id="externalCameraPreview" alt="" aria-label="外接相机实时预览">
+            <video id="webcamPreview" autoplay muted playsinline aria-label="Mac Webcam 实时预览"></video>
+            <img id="resultImage" alt="拍摄结果">
+            <div id="countdown" aria-live="assertive"><span></span></div>
+          </div>
+          <button id="captureButton" class="capture-button"><span></span>开始拍照</button>
+          <div id="resultActions" class="actions hidden">
+            <button id="retakeButton" class="secondary">重新拍</button>
+            <button id="downloadButton" class="secondary">下载照片</button>
+            <button id="shareButton" class="secondary">分享 / AirDrop</button>
+            <button id="printButton" class="primary">打印照片</button>
+          </div>
+          <p id="message" class="message"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="settingsView" class="view hidden">
+      <div class="card">
+        <h2>活动设置</h2>
+        <label>活动名称（同时显示在左上角）
+          <textarea id="eventName" rows="2" maxlength="120"></textarea>
+        </label>
+        <div class="grid">
+          <label>活动日期<input id="eventDate" type="date"></label>
+          <label>倒数秒数<input id="countdownSeconds" type="number" min="1" max="10"></label>
+        </div>
+        <label>拍摄工具
+          <select id="captureSourceSelect">
+            <option value="auto">自动选择（推荐）</option>
+            <option value="camera">外接相机</option>
+            <option value="webcam">Mac Webcam</option>
+          </select>
+        </label>
+        <label>照片文字（支持换行）
+          <textarea id="eventText" rows="3" maxlength="240"></textarea>
+        </label>
+        <label>下载照片名称
+          <input id="downloadName" maxlength="80" placeholder="picbooth">
+          <small id="downloadNameHint" class="settings-hint">下一张照片：picbooth_0001.jpg</small>
+        </label>
+        <label>当前模版<select id="activeTemplateSelect"></select></label>
+        <label>打印机<select id="printerSelect"><option value="">系统默认打印机</option></select></label>
+        <div class="actions">
+          <button id="cancelSettings" class="secondary">返回</button>
+          <button id="saveSettings" class="primary">保存设置</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="designerView" class="view hidden">
+      <div class="designer">
+        <aside class="template-sidebar">
+          <div class="panel-title">
+            <div><span class="eyebrow">TEMPLATES</span><h2>模版库</h2></div>
+          </div>
+          <label class="compact-label">筛选版式
+            <select id="orientationFilter">
+              <option value="all">全部模版</option>
+              <option value="landscape">横版</option>
+              <option value="portrait">竖版</option>
+            </select>
+          </label>
+          <div class="new-template-actions">
+            <button id="newLandscapeButton" class="small-button">＋ 横版</button>
+            <button id="newPortraitButton" class="small-button">＋ 竖版</button>
+          </div>
+          <div id="templateList" class="template-list"></div>
+        </aside>
+
+        <section class="canvas-panel">
+          <div class="designer-toolbar">
+            <button id="addTextButton">＋ 文字</button>
+            <button id="addPhotoButton">＋ 照片框</button>
+            <button id="addHeartButton">♡ 爱心</button>
+            <label class="toolbar-upload">＋ 图片<input id="assetFile" type="file" accept="image/png,image/jpeg"></label>
+            <button id="duplicateLayerButton">复制图层</button>
+            <button id="deleteLayerButton" class="danger">删除图层</button>
+          </div>
+          <div class="canvas-wrap">
+            <canvas id="designerCanvas" width="900" height="600" aria-label="六寸模版画布"></canvas>
+          </div>
+          <p id="canvasHelp" class="canvas-help">横向 6 寸 · 1800 × 1200 px</p>
+        </section>
+
+        <aside class="property-sidebar">
+          <div class="panel-title">
+            <div><span class="eyebrow">PROPERTIES</span><h2>属性</h2></div>
+          </div>
+          <label>模版名称<input id="templateName"></label>
+          <label>版式
+            <select id="templateOrientation">
+              <option value="landscape">横版 1800 × 1200</option>
+              <option value="portrait">竖版 1200 × 1800</option>
+            </select>
+          </label>
+          <label>背景颜色<input id="templateBackground" type="color"></label>
+          <div id="layerProperties">
+            <p class="property-empty">选择画布中的文字、照片框或图片进行调整。</p>
+          </div>
+          <div class="designer-actions">
+            <button id="deleteTemplateButton" class="secondary danger">删除模版</button>
+            <button id="saveTemplateButton" class="primary">保存模版</button>
+            <button id="useTemplateButton" class="primary accent">选用并返回拍照</button>
+            <button id="closeDesignerButton" class="secondary">返回拍照</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <script src="/app.js?v=25"></script>
+</body>
+</html>

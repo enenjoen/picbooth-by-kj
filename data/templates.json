@@ -1,0 +1,543 @@
+[
+  {
+    "id": "classic",
+    "name": "粉色爱语",
+    "background": "#fff2f6",
+    "width": 1800,
+    "height": 1200,
+    "schemaVersion": 4,
+    "layers": [
+      {
+        "id": "photo-1",
+        "type": "photo",
+        "photoIndex": 0,
+        "x": 55,
+        "y": 55,
+        "w": 1280,
+        "h": 1090,
+        "radius": 0,
+        "borderColor": "#ffffff",
+        "borderWidth": 12
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "text": "{event}",
+        "x": 1564,
+        "y": 197,
+        "fontSize": 80,
+        "color": "#9f4f6b",
+        "align": "center",
+        "font": "script"
+      },
+      {
+        "id": "message",
+        "type": "text",
+        "text": "{text}",
+        "x": 1560,
+        "y": 610,
+        "fontSize": 34,
+        "color": "#a9687e",
+        "align": "center",
+        "font": "handwritten"
+      },
+      {
+        "id": "date",
+        "type": "text",
+        "text": "{date}",
+        "x": 1560,
+        "y": 1050,
+        "fontSize": 34,
+        "color": "#ba7890",
+        "align": "center",
+        "font": "elegant"
+      },
+      {
+        "id": "heart-2",
+        "type": "heart",
+        "x": 1535,
+        "y": 1100,
+        "w": 50,
+        "h": 45,
+        "color": "#d86d93",
+        "opacity": 1
+      },
+      {
+        "id": "image-1782884192881-c00f5",
+        "type": "image",
+        "src": "/data/assets/1782884192867-eb59bd.png",
+        "x": 1329,
+        "y": 171,
+        "w": 550,
+        "h": 800,
+        "opacity": 1
+      }
+    ]
+  },
+  {
+    "id": "editorial",
+    "name": "玫瑰杂志",
+    "background": "#8e3f5c",
+    "width": 1800,
+    "height": 1200,
+    "schemaVersion": 4,
+    "layers": [
+      {
+        "id": "kicker",
+        "type": "text",
+        "text": "CELEBRATE THE MOMENT",
+        "x": 80,
+        "y": 105,
+        "fontSize": 28,
+        "color": "#f2c5d4",
+        "align": "left",
+        "font": "elegant"
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "text": "{event}",
+        "x": 80,
+        "y": 240,
+        "fontSize": 82,
+        "color": "#fff7fa",
+        "align": "left",
+        "font": "script"
+      },
+      {
+        "id": "message",
+        "type": "text",
+        "text": "{text}",
+        "x": 80,
+        "y": 440,
+        "fontSize": 34,
+        "color": "#f4d7e1",
+        "align": "left",
+        "font": "handwritten"
+      },
+      {
+        "id": "date",
+        "type": "text",
+        "text": "{date}",
+        "x": 80,
+        "y": 1040,
+        "fontSize": 34,
+        "color": "#f2c5d4",
+        "align": "left",
+        "font": "elegant"
+      },
+      {
+        "id": "photo-1",
+        "type": "photo",
+        "photoIndex": 0,
+        "x": 590,
+        "y": 55,
+        "w": 1155,
+        "h": 1090,
+        "radius": 18,
+        "borderColor": "#ffdce8",
+        "borderWidth": 6
+      }
+    ]
+  },
+  {
+    "id": "triple",
+    "name": "甜心三连拍",
+    "background": "#fff7fa",
+    "width": 1800,
+    "height": 1200,
+    "schemaVersion": 4,
+    "layers": [
+      {
+        "id": "photo-1",
+        "type": "photo",
+        "photoIndex": 0,
+        "x": 45,
+        "y": 45,
+        "w": 540,
+        "h": 865,
+        "radius": 25,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "photo-2",
+        "type": "photo",
+        "photoIndex": 1,
+        "x": 630,
+        "y": 45,
+        "w": 540,
+        "h": 865,
+        "radius": 25,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "photo-3",
+        "type": "photo",
+        "photoIndex": 2,
+        "x": 1215,
+        "y": 45,
+        "w": 540,
+        "h": 865,
+        "radius": 25,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "text": "{event}",
+        "x": 900,
+        "y": 1000,
+        "fontSize": 68,
+        "color": "#a64f6c",
+        "align": "center",
+        "font": "script"
+      },
+      {
+        "id": "date",
+        "type": "text",
+        "text": "{date}",
+        "x": 900,
+        "y": 1110,
+        "fontSize": 32,
+        "color": "#d36f92",
+        "align": "center",
+        "font": "elegant"
+      }
+    ]
+  },
+  {
+    "id": "four-grid",
+    "name": "爱心四格",
+    "background": "#f8dfe8",
+    "width": 1800,
+    "height": 1200,
+    "schemaVersion": 4,
+    "layers": [
+      {
+        "id": "photo-1",
+        "type": "photo",
+        "photoIndex": 0,
+        "x": 40,
+        "y": 40,
+        "w": 700,
+        "h": 520,
+        "radius": 24,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "photo-2",
+        "type": "photo",
+        "photoIndex": 1,
+        "x": 780,
+        "y": 40,
+        "w": 700,
+        "h": 520,
+        "radius": 24,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "photo-3",
+        "type": "photo",
+        "photoIndex": 2,
+        "x": 40,
+        "y": 600,
+        "w": 700,
+        "h": 520,
+        "radius": 24,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "photo-4",
+        "type": "photo",
+        "photoIndex": 3,
+        "x": 780,
+        "y": 600,
+        "w": 700,
+        "h": 520,
+        "radius": 24,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "heart",
+        "type": "heart",
+        "x": 1565,
+        "y": 95,
+        "w": 140,
+        "h": 125,
+        "color": "#b95778",
+        "opacity": 0.9
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "text": "{event}",
+        "x": 1630,
+        "y": 490,
+        "fontSize": 38,
+        "color": "#97455f",
+        "align": "center",
+        "font": "script"
+      },
+      {
+        "id": "date",
+        "type": "text",
+        "text": "{date}",
+        "x": 1630,
+        "y": 1010,
+        "fontSize": 30,
+        "color": "#a95872",
+        "align": "center",
+        "font": "elegant"
+      }
+    ]
+  },
+  {
+    "id": "portrait-classic",
+    "name": "竖版花语",
+    "background": "#fff2f6",
+    "width": 1200,
+    "height": 1800,
+    "schemaVersion": 4,
+    "layers": [
+      {
+        "id": "photo-1",
+        "type": "photo",
+        "photoIndex": 0,
+        "x": 55,
+        "y": 55,
+        "w": 1090,
+        "h": 1330,
+        "radius": 35,
+        "borderColor": "#ffffff",
+        "borderWidth": 10
+      },
+      {
+        "id": "heart",
+        "type": "heart",
+        "x": 525,
+        "y": 1430,
+        "w": 150,
+        "h": 135,
+        "color": "#df82a2",
+        "opacity": 0.9
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "text": "{event}",
+        "x": 600,
+        "y": 1605,
+        "fontSize": 58,
+        "color": "#a64f6c",
+        "align": "center",
+        "font": "script"
+      },
+      {
+        "id": "date",
+        "type": "text",
+        "text": "{date}",
+        "x": 600,
+        "y": 1730,
+        "fontSize": 30,
+        "color": "#bd738d",
+        "align": "center",
+        "font": "elegant"
+      }
+    ]
+  },
+  {
+    "id": "portrait-strip",
+    "name": "竖版三连拍",
+    "background": "#fff8fb",
+    "width": 1200,
+    "height": 1800,
+    "schemaVersion": 4,
+    "layers": [
+      {
+        "id": "photo-1",
+        "type": "photo",
+        "photoIndex": 0,
+        "x": 55,
+        "y": 55,
+        "w": 1090,
+        "h": 420,
+        "radius": 22,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "photo-2",
+        "type": "photo",
+        "photoIndex": 1,
+        "x": 55,
+        "y": 510,
+        "w": 1090,
+        "h": 420,
+        "radius": 22,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "photo-3",
+        "type": "photo",
+        "photoIndex": 2,
+        "x": 55,
+        "y": 965,
+        "w": 1090,
+        "h": 420,
+        "radius": 22,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "text": "{event}",
+        "x": 600,
+        "y": 1530,
+        "fontSize": 58,
+        "color": "#a64f6c",
+        "align": "center",
+        "font": "script"
+      },
+      {
+        "id": "message",
+        "type": "text",
+        "text": "{text}",
+        "x": 600,
+        "y": 1640,
+        "fontSize": 30,
+        "color": "#a9687e",
+        "align": "center",
+        "font": "handwritten"
+      },
+      {
+        "id": "date",
+        "type": "text",
+        "text": "{date}",
+        "x": 600,
+        "y": 1740,
+        "fontSize": 28,
+        "color": "#bd738d",
+        "align": "center",
+        "font": "elegant"
+      }
+    ]
+  },
+  {
+    "id": "custom-1782840610264-a3062",
+    "name": "Portrait x2",
+    "background": "#fff2f6",
+    "width": 1200,
+    "height": 1800,
+    "schemaVersion": 4,
+    "layers": [
+      {
+        "id": "photo-1782840610265-91f6d",
+        "type": "photo",
+        "photoIndex": 0,
+        "x": 100,
+        "y": 70,
+        "w": 1000,
+        "h": 600,
+        "radius": 35,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "text-1782840610265-cedd2",
+        "type": "text",
+        "text": "{event}",
+        "x": 838,
+        "y": 1542,
+        "fontSize": 100,
+        "color": "#a64f6c",
+        "align": "center",
+        "font": "script"
+      },
+      {
+        "id": "text-1782840610265-8c2e9",
+        "type": "text",
+        "text": "{date}",
+        "x": 827,
+        "y": 1648,
+        "fontSize": 47,
+        "color": "#c26d89",
+        "align": "center",
+        "font": "elegant"
+      },
+      {
+        "id": "photo-1782840635364-02ea0",
+        "type": "photo",
+        "photoIndex": 1,
+        "x": 100,
+        "y": 700,
+        "w": 1000,
+        "h": 600,
+        "radius": 35,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      },
+      {
+        "id": "image-1782841208945-c8792",
+        "type": "image",
+        "src": "/data/assets/1782841208931-771feb.png",
+        "x": -6,
+        "y": 900,
+        "w": 600,
+        "h": 900,
+        "opacity": 1
+      },
+      {
+        "id": "text-1782841307351-f6329",
+        "type": "text",
+        "text": "Welcome to our event!",
+        "x": 831,
+        "y": 1437,
+        "fontSize": 64,
+        "color": "#a64f6c",
+        "align": "center",
+        "font": "script"
+      }
+    ]
+  },
+  {
+    "id": "custom-1782843403017-96967",
+    "name": "日历版",
+    "background": "#ffffff",
+    "width": 1200,
+    "height": 1800,
+    "schemaVersion": 4,
+    "layers": [
+      {
+        "id": "image-1782843411722-8494a",
+        "type": "image",
+        "src": "/data/assets/1782843411712-c3e0a8.png",
+        "x": 22,
+        "y": 60,
+        "w": 1150,
+        "h": 1700,
+        "opacity": 1
+      },
+      {
+        "id": "photo-1782843450068-9173a",
+        "type": "photo",
+        "photoIndex": 0,
+        "x": 117,
+        "y": 415,
+        "w": 960,
+        "h": 675,
+        "radius": 28,
+        "borderColor": "#ffffff",
+        "borderWidth": 8
+      }
+    ]
+  }
+]
